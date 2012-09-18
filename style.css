@@ -3,7 +3,7 @@ body {
 }
 a {
 	color:black;
-	text-decoration:none;
+	text-decoration:underline;
 }
 #container {
 	width:700px;
@@ -20,11 +20,9 @@ a {
 	padding:10px 35px 10px 35px;
 	font:15px "Source Sans Pro";
 }
-.menu-item {
-	margin:0 10px 0 10px;
-}
 #menu-links {
 	float:right;
+	text-decoration:none;
 }
 #content {
 	margin-top:50px;
@@ -36,8 +34,18 @@ a {
 	text-align:center;
 	font-size:13px;
 }
+.menu-item {
+	margin:0 10px 0 10px;
+	text-decoration:none;
+}
 .title {
 	display:block;
 	margin-bottom:10px;
 	font:30px "Open Sans";
+}
+.timestamp {
+	display:block;
+	margin-top:15px;
+	color:grey;
+	font-size:14px;
 }
