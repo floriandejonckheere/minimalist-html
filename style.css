@@ -5,6 +5,12 @@ a {
 	color:black;
 	text-decoration:underline;
 }
+code,pre {
+	display:block;
+	font-size:12px;
+	width:100%;
+	padding:7px;
+}
 #container {
 	width:700px;
 	margin-left:auto;
