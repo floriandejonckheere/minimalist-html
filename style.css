@@ -11,6 +11,9 @@ code,pre {
 	width:100%;
 	padding:7px;
 }
+img {
+	vertical-align:middle;
+}
 #container {
 	width:700px;
 	margin-left:auto;
@@ -54,4 +57,7 @@ code,pre {
 	margin-top:15px;
 	color:grey;
 	font-size:14px;
+}
+.post {
+	padding-left:10px;
 }
