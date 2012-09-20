@@ -14,6 +14,9 @@ code,pre {
 img {
 	vertical-align:middle;
 }
+article {
+	width:630px;
+}
 #container {
 	width:700px;
 	margin-left:auto;
@@ -47,32 +50,36 @@ img {
 	margin:0 10px 0 10px;
 	text-decoration:none;
 }
-.title {
+.artTitle {
 	display:block;
 	margin-bottom:10px;
 	font:30px "Open Sans";
 }
-.comments {
-	margin-top:15px;
-	color:grey;
+.artText {
+	margin:auto 10px auto 10px;
+}
+.commContainer {
+	margin:15px auto auto 10px;
 	font-size:14px;
+	width:500px;
+}
+.timestamp {
+	color:grey;
 }
 .comment {
 	display:block;
-	color:black;
 	margin:10px auto 10px 15px;
 }
 .name {
 	display:inherit;
 	font-weight:600;
 }
-.commtext {
+.commText {
 	display:inherit;
-	width:500px;
 }
-.post {
-	padding-left:10px;
-}
+
+
+
 .download {
 	font-size:15px;
 	margin-bottom:20px;
