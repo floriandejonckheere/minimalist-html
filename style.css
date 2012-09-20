@@ -52,11 +52,23 @@ img {
 	margin-bottom:10px;
 	font:30px "Open Sans";
 }
-.timestamp {
-	display:block;
+.comments {
 	margin-top:15px;
 	color:grey;
 	font-size:14px;
+}
+.comment {
+	display:block;
+	color:black;
+	margin:10px auto 10px 15px;
+}
+.name {
+	display:inherit;
+	font-weight:600;
+}
+.commtext {
+	display:inherit;
+	width:500px;
 }
 .post {
 	padding-left:10px;
