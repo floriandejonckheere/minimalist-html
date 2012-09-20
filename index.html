@@ -6,6 +6,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" type="text/css">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<meta charset="utf-8" />
+		<script type="text/JavaScript" src="script.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -21,18 +22,31 @@
 				</span>
 			</div>
 			<div id="content">
-				<span class="title">Systemd impressions</span>
-				<div class="post">
-					I recently decided to get a new, fresh Arch Linux install. I'd customize it from the ground up to be as functional and fast as possible, adhering to the KISS principle, yet satisfying all my needs and having a little bit eye candy. Seeing as SysV Init is considered to be a major factor in bootup speed, I decided to look at the most obvious drop-in replacement, systemd. After setting up the basic Arch root system, I installed and configured it. The only real pain was setting up the static network without any network manager, but with a little fiddling I managed that too.<p>
-					Now, systemd does not only provide the init process, but it handles things like session management and logging too. So syslog-ng (or any other logging daemon) is not necessary anymore. There is one big disadvantage to systemd's journal, it doesn't store its logs in plain text.
-					<span class="timestamp">Posted on September 18th, 2012 by Florian Dejonckheere - no comments</span>
-				</div>
-				<span class="title">Hello world</span>
-				<div class="post">
-					This is the first post on my brand new homebrewn HTML5-compliant website. It may be the first complete thing I have written the last year, as a large number of my projects and most of my HTML work doesn't get out of the concept phase. I am a lousy project manager.
-					<p>As you can see I have taken the minimalist approach to building a website framework. I seem to have gotten bit by the <a href="http://www.wikipedia.org/wiki/KISS_principle">KISS</a> bug, as Occam's Razor can be applied to almost everything I have created the last year esthetically and functionally speaking.
-					<p>The website itself is (for now) completely black and white, including the scarce icons. It sports a minimalist interface featuring a simple menu bar with social media icons and a single column layout. As of the initial commit on <a href="http://www.github.com/floriandejonckheere/">GitHub</a>, it contains few files. I plan on integrating image support, syntax colouring, a comment system and possible hundreds of other things.
-				</div>
+				<article>
+					<span class="artTitle">Title</span>
+					<div class="artText">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</div>
+						<div class="commContainer">
+							<span class="timestamp">Posted on September 20th, 2012 by Florian Dejonckheere - <u>5 comments</u></span>
+							<div id="comments-1">
+								<!-- TEXT WILL BE REPLACED -->
+								<div class="comment">
+									<span class="name">Anonymous</span>
+									<span class="commtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
+								</div>
+								<div class="comment" style="margin-left:30px;width:485px;">
+									<span class="name"><a href="mailto:florian@floriandejonckheere.be">Anonymous</a></span>
+									<span class="commtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
+								</div>
+								<div class="comment">
+									<span class="name">Anonymous</span>
+									<span class="commText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
+								</div>
+								<!-- TEXT WILL BE REPLACED -->
+							</div>
+						</div>
+				</article>
 			</div>
 			<div id="footer">
 				<a href="files/private/" title="Secure login"><img src="lock.png" alt="Lock" /></a> - Design by Florian Dejonckheere
@@ -40,7 +54,3 @@
 		</div>
 	</body>
 </html>
-
-
-
-
