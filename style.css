@@ -84,3 +84,24 @@ footer {
 	font-size:15px;
 	margin-bottom:20px;
 }
+
+
+
+input {
+	height:25px;
+	width:279px;
+	border:1px solid #ccc;
+	color:#bbb;
+	padding:7px 11px;
+}
+.input:focus {
+	color: #777;
+}
+/* Override needed for styling the buttons */
+.button {
+	height:40px;
+	width:150px;
+	border:1px solid #ccc;
+	color: #bbb;
+	margin-top:5px;
+}

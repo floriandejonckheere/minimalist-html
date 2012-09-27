@@ -1,15 +1,15 @@
 function init(){
 	var comments = document.getElementsByClassName('comments');
 	for (var i = 0, j = comments.length; i < j; i++) {
-		comments[i].onclick = toggleComments;
+		comments[i].onClick = function(){ toggleComments(this.id); }
 	}
 }
 
 function toggleComments(article){
-	var elem = document.getElementById('the_id');
+	var elem = document.getElementById(article);
 	var nextElem = next(elem);
 	if (nextElem)
-		nextElem.style.display = 'none';
+		alert(nextElem.id);
 
 }
 
