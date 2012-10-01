@@ -87,21 +87,28 @@ footer {
 
 
 
-input {
+input, textarea {
 	height:25px;
 	width:279px;
 	border:1px solid #ccc;
-	color:#bbb;
+	color:#aaa;
 	padding:7px 11px;
 }
-.input:focus {
-	color: #777;
+textarea {
+	font-family:inherit;
+	height:150px;
+	width:434px;
+}
+input:focus, textarea:focus {
+	color: #222;
 }
 /* Override needed for styling the buttons */
 .button {
-	height:40px;
+	height:41px;
+	margin: auto 5px auto 5px;
+	vertical-align:bottom;
 	width:150px;
 	border:1px solid #ccc;
-	color: #bbb;
+	color: #aaa;
 	margin-top:5px;
 }
