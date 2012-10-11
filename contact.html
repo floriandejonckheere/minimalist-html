@@ -24,10 +24,10 @@
 					<span class="artTitle">Contact</span>
 					<div class="artText">
 						Please use this form if you want to contact me.
-						<p><form action="login.php">
-							<input type="text" id="name" placeholder="Name (optional)" maxlength="20" /><input type="submit" class="button" value="Send message" /><p>
-							<input type="email" id="email" placeholder="E-mail" maxlength="20" required /><p>
-							<textarea id="text" placeholder="Write your message here" required></textarea><p>
+						<p><form action="contact.php" method="POST">
+							<input type="text" id="name" name="name" placeholder="Name (optional)" maxlength="20" /><input type="submit" class="button" value="Send message" /><p>
+							<input type="email" id="email" name="email" placeholder="E-mail" required /> <span style="color:#aaa;">(will be kept private)</span><p>
+							<textarea id="text" name="text" placeholder="Write your message here" required></textarea><p>
 						</form>
 					</div>
 				</article>

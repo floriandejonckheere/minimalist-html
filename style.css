@@ -12,18 +12,19 @@ code,pre {
 	padding:7px;
 }
 nav {
-	margin-top:50px;
+	margin-top:25px;
 	padding:10px 35px 10px 35px;
 	font:15px "Source Sans Pro";
 }
 img {
 	vertical-align:middle;
+	border:0;
 }
 article {
 	width:630px;
 }
 footer {
-	margin-top:25px;
+	margin: 25px auto 50px auto;
 	text-align:center;
 	font-size:13px;
 }
@@ -88,14 +89,15 @@ footer {
 
 
 input, textarea {
+	font-family:inherit;
 	height:25px;
 	width:279px;
 	border:1px solid #ccc;
 	color:#aaa;
 	padding:7px 11px;
+	overflow:auto;
 }
 textarea {
-	font-family:inherit;
 	height:150px;
 	width:434px;
 }
@@ -110,5 +112,9 @@ input:focus, textarea:focus {
 	width:150px;
 	border:1px solid #ccc;
 	color: #aaa;
+	background:white;
 	margin-top:5px;
+}
+.button:focus {
+	color:#aaa;
 }

@@ -11,10 +11,13 @@
 		<div id="container">
 			<div id="title">Florian Dejonckheere</div>
 			<nav>
-				<a href="index.html" class="menu-item">Home</a>
-				<span id="menu-links">
-					<a href="http://www.github.com/floriandejonckheere" title="GitHub"><img src="icons/github.png" alt="GitHub" /></a>
-				</span>
+<?php
+	$file = "menu.html";
+	$fMenu = fopen($file, "r");
+	$sMenu = fread($fMenu, filesize($file));
+	fclose($fMenu);
+	echo $sMenu;
+?>
 			</nav>
 			<div id="content">
 				<article>
