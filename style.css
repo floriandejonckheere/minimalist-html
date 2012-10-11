@@ -108,7 +108,6 @@ input:focus, textarea:focus {
 /* Override needed for styling the buttons */
 .button {
 	height:41px;
-	margin: auto 5px auto 5px;
 	vertical-align:bottom;
 	width:150px;
 	border:1px solid #ccc;
