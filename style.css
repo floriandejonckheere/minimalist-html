@@ -90,6 +90,7 @@ footer {
 
 input, textarea {
 	font-family:inherit;
+	font-size:15px;
 	height:25px;
 	width:279px;
 	border:1px solid #ccc;
