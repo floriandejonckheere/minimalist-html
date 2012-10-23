@@ -33,7 +33,7 @@ if($_GET['menu'] == "y"){
 <!-- POTENTIAL SECURITY RISK -->
 <?php
 if($_GET['title']){
-	urldecode($_GET['title']);
+	echo urldecode($_GET['title']);
 } else {
 	echo "Title";
 }
@@ -43,7 +43,7 @@ if($_GET['title']){
 <!-- POTENTIAL SECURITY RISK -->
 <?php
 if($_GET['text']){
-	urldecode($_GET['text']);
+	echo urldecode($_GET['text']);
 } else {
 	echo "This is an example text.";
 }
