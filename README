@@ -3,4 +3,4 @@ Minimalist-HTML
 
 This is the source code to my website http://www.floriandejonckheere.be. It is a purely black and white (for now) minimalist HTML template featuring a simple menu bar with social media links and single column layout. The navigation bar is loaded via PHP from an external file, in order to unify and simplify the website's structure.
 
-The project is licensed under the GNU Public License v3 (see COPYING). Social media icons are taken from the Font Awesome project (http://fortawesome.github.com/Font-Awesome/), and are licensed under Creative Commons Attribution 3.0 Unported (http://creativecommons.org/licenses/by/3.0/). They are extracted from the font file by the font-awesome-to-png script (https://github.com/odyniec/font-awesome-to-png).
+The project is licensed under the GNU Public License v3 (see COPYING). Social media /icons are taken from the Font Awesome project (http://fortawesome.github.com/Font-Awesome/), and are licensed under Creative Commons Attribution 3.0 Unported (http://creativecommons.org/licenses/by/3.0/). They are extracted from the font file by the font-awesome-to-png script (https://github.com/odyniec/font-awesome-to-png).
