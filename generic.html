@@ -19,6 +19,11 @@ if($_GET['menu'] == "y"){
 	$sMenu = fread($fMenu, filesize($file));
 	fclose($fMenu);
 	echo $sMenu;
+} else {
+	echo '<a href="index.html" class="menu-item">Home</a>';
+	echo '		<span id="menu-links">
+					<a href="http://www.github.com/floriandejonckheere" title="GitHub"><img src="/icons/github.png" alt="GitHub" /></a>
+				</span>';
 }
 ?>
 			</nav>
