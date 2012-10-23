@@ -56,7 +56,7 @@ if(!empty($sError)){
 				</article>
 			</div>
 			<footer>
-				<a href="files/private/" title="Secure login"><img src="/icons/lock.png" alt="Lock" /></a> - Design by Florian Dejonckheere
+				<a href="files/private/" title="Secure login"><img src="//icons/lock.png" alt="Lock" /></a> - Design by Florian Dejonckheere
 			</footer>
 		</div>
 	</body>
