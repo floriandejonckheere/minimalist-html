@@ -11,24 +11,38 @@
 		<div id="container">
 			<div id="title">Florian Dejonckheere</div>
 			<nav>
+<!-- POTENTIAL SECURITY RISK -->
 <?php
+if($_GET['menu'] == "y"){
 	$file = "menu.html";
 	$fMenu = fopen($file, "r");
 	$sMenu = fread($fMenu, filesize($file));
 	fclose($fMenu);
 	echo $sMenu;
+}
 ?>
 			</nav>
 			<div id="content">
 				<article>
-					<span class="artTitle">Authentication required</span>
+					<span class="artTitle">
+<!-- POTENTIAL SECURITY RISK -->
+<?php
+if($_GET['title']){
+	urldecode($_GET['title']);
+} else {
+	echo "Title";
+}
+?>
+					</span>
 					<div class="artText">
-						Secure credentials are required beyond this point. Please input your username and password to continue.
-						<p><form action="secure.php" method="post">
-							<input type="text" id="user" name="user" placeholder="Username" maxlength="20" required />
-							<input type="password" id="pass" name="pass" placeholder="Password" maxlength="20" required />
-							<input type="submit" class="button" value="Authenticate" />
-						</form>
+<!-- POTENTIAL SECURITY RISK -->
+<?php
+if($_GET['text']){
+	urldecode($_GET['text']);
+} else {
+	echo "This is an example text.";
+}
+?>
 					</div>
 				</article>
 			</div>
