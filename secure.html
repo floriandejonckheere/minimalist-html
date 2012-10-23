@@ -24,9 +24,9 @@
 					<span class="artTitle">Authentication required</span>
 					<div class="artText">
 						Secure credentials are required beyond this point. Please input your username and password to continue.
-						<p><form action="secure.php">
-							<input type="text" name="user" placeholder="Username" maxlength="20" />
-							<input type="password" name="pass" placeholder="Password" maxlength="20" />
+						<p><form action="secure.php" method="post">
+							<input type="text" id="user" name="user" placeholder="Username" maxlength="20" />
+							<input type="password" id="pass" name="pass" placeholder="Password" maxlength="20" />
 							<input type="submit" class="button" value="Authenticate" />
 						</form>
 					</div>
