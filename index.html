@@ -2,53 +2,72 @@
 <html>
 	<head>
 		<title>Florian Dejonckheere</title>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" type="text/css">
-		<link href="/style.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:300" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="form.css" rel="stylesheet" type="text/css" />
+		<link href="contact.css" rel="stylesheet" type="text/css" />
 		<meta charset="utf-8" />
-		<script type="text/JavaScript" src="script.js"></script>
 	</head>
 	<body>
-		<div id="container">
-			<div id="title">Florian Dejonckheere</div>
-			<nav>
-<?php
-	$file = "menu.html";
-	$fMenu = fopen($file, "r");
-	$sMenu = fread($fMenu, filesize($file));
-	fclose($fMenu);
-	echo $sMenu;
-?>
-
-			</nav>
-			<div id="content">
-				<article>
-					<span class="artTitle">Title</span>
-					<div class="artText">
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-					</div>
-						<!--<div class="commContainer">
-							<span class="timestamp" id="timestamp" onClick="toggleComments(this.id);">Posted on September 20th, 2012 by Florian Dejonckheere - <u>5 comments</u></span>
-							<div id="comments-1">
-								<div class="comment">
-									<span class="name">Anonymous</span>
-									<span class="commtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
-								</div>
-								<div class="comment" style="margin-left:30px;width:485px;">
-									<span class="name"><a href="mailto:florian@floriandejonckheere.be">Anonymous</a></span>
-									<span class="commtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
-								</div>
-								<div class="comment">
-									<span class="name">Anonymous</span>
-									<span class="commText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
-								</div>
-							</div>
-						</div>-->
-				</article>
+		<header>
+			<div id="title" onClick="window.location = '/index.html';">Florian Dejonckheere</div>
+			<div id="loginBar">
+				<span id="login">
+					Logged in as <a href="#" onClick="if(confirm('You will be logged out.')){window.location = '/logout.php';}">dummy user</a>
+				</span>
 			</div>
-			<footer>
-				<a href="/secure.html" title="Secure login"><img src="/icons/lock.png" alt="Lock" /></a> - Design by Florian Dejonckheere
-			</footer>
-		</div>
+			<nav>
+	<?php
+	include('include/menu.inc');
+	?>
+			</nav>
+		</header>
+		<section>
+			<article>
+				<hgroup>
+					<h1>Main title</h1>
+					<h2>Subtitle one</h2>
+				</hgroup>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</div>
+				<h2>Subtitle two</h2>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</article>
+			<article>
+				<h1>Commonly used structures</h1>
+				<h2>Links</h2>
+				<div class="text">
+					This section contains a few examples of links. See below for more information.
+					<ul class="linkList">
+						<li>
+							<a href="#"><img src="/icons/link.png" alt="Link" class="icon" />External Link</a>
+						</li>
+						<li>
+							<a href="#"><img src="/icons/download-alt.png" alt="Download" class="icon" />Sample file</a>
+							<br><span>Description for the sample file</span>
+						</li>
+						<li>
+							<a href="#"><img src="/icons/download-alt.png" alt="Download" class="icon" />Sample file</a>
+							<br><span>Description for the sample file</span>
+						</li>
+					</ul>
+				</div>
+				<h2>Forms</h2>
+				<div class="text">
+					Please fill out the form below if you wish to contact me.
+					<form action="#" method="POST">
+						<input type="text" id="name" name="name" placeholder="Name (optional)" maxlength="20" />
+						<input type="submit" value="Send message" />
+						<input type="email" id="email" name="email" placeholder="E-mail" required /> (will be kept private)
+						<textarea id="text" name="text" placeholder="Write your message here" required></textarea><p>
+					</form>
+				</div>
+			</article>
+		</section>
+		<footer>
+			Design by Florian Dejonckheere
+		</footer>
 	</body>
 </html>

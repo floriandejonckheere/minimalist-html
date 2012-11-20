@@ -1,26 +1,32 @@
+/*
+ * style.css - stylesheet for main document
+ *
+ * Florian <floriandejonckheere.be>
+ *
+ **/
+
+
+/*		Semantic elements		 */
+/* General structure of the page */
 body {
 	font:18px "Source Sans Pro";
-}
-a {
-	color:black;
-	text-decoration:underline;
-}
-code,pre {
-	display:block;
-	font-size:12px;
-	width:100%;
-	padding:7px;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
 }
 nav {
-	margin-top:25px;
 	padding:10px 35px 10px 35px;
-	font:15px "Source Sans Pro";
+	font-size:15px;
 }
-img {
-	vertical-align:middle;
-	border:0;
+section {
+	margin-top:35px;
+	padding:auto 35px auto 35px;
+	text-align:justify;
 }
 article {
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
 	width:630px;
 }
 footer {
@@ -28,93 +34,77 @@ footer {
 	text-align:center;
 	font-size:13px;
 }
-#container {
-	width:700px;
-	margin-left:auto;
-	margin-right:auto;
+
+.text {
+	text-align:justify;
+	margin:auto 10px auto 10px;
 }
+
+
+
+
+/*			Markup elements			*/
+/*		Titels, subtitels, links	*/
 #title  {
 	font:65px "Open Sans";
 	margin-top:50px;
 	text-align:center;
+	cursor:pointer;
 }
-#menu-links {
+#loginBar {
+	height:25px;
+	padding-right:35px;
+}
+#login {
 	float:right;
-	text-decoration:none;
+	font-size:12px;
 }
-#content {
-	margin-top:50px;
-	padding:10px 35px 10px 35px;
-	text-align:justify;
+#menuLinks {
+	float:right;
 }
-.menu-item {
+.menuItem {
 	margin:0 10px 0 10px;
 	text-decoration:none;
 }
-.artTitle {
+
+a {
+	color:black;
+	text-decoration:underline;
+}
+code,pre {
+	display:block;
+	font:13px "Inconsolata";
+	width:100%;
+	padding:7px;
+	border:1px solid #bbb;
+}
+img {
+	vertical-align:middle;
+	border:0;
+}
+.icon {
+	margin-right:5px;
+}
+
+.linkList {
+	list-style:none;
+	padding:0;
+}
+.linkList li {
+	margin-bottom:7px;
+}
+.linkList span {
+	margin-left:12px;
+}
+
+h1 {
 	display:block;
 	margin-bottom:10px;
 	font:30px "Open Sans";
 }
-.artText {
-	margin:auto 10px auto 10px;
-}
-.commContainer {
-	margin:15px auto auto 10px;
-	font-size:14px;
-	width:500px;
-}
-.timestamp {
-	color:grey;
-}
-.comment {
+h2 {
 	display:block;
-	margin:10px auto 10px 15px;
-}
-.name {
-	display:inherit;
-	font-weight:600;
-}
-.commText {
-	display:inherit;
-}
-
-
-
-.download {
-	font-size:15px;
-	margin-bottom:20px;
-}
-
-
-
-input, textarea {
-	font-family:inherit;
-	font-size:15px;
-	height:25px;
-	width:279px;
-	border:1px solid #ccc;
-	color:#aaa;
-	padding:7px 11px;
-	overflow:auto;
-}
-textarea {
-	height:150px;
-	width:434px;
-}
-input:focus, textarea:focus {
-	color: #222;
-}
-/* Override needed for styling the buttons */
-.button {
-	height:41px;
-	vertical-align:bottom;
-	width:150px;
-	border:1px solid #ccc;
-	color: #aaa;
-	background:white;
-	margin-top:5px;
-}
-.button:focus {
-	color:#aaa;
+	margin-top:10px;
+	font:23px "Open Sans";
+	font-weight:300;
 }

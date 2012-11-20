@@ -1,0 +1,18 @@
+/*
+ * contact.css - stylesheet for the contact form, dependant on form.css
+ *
+ * Florian <floriandejonckheere.be>
+ *
+ * IMPORTANT: form.css MUST be linked first in the page (parent stylesheet)
+ *
+ **/
+
+input, textarea {
+	/* Total width = 630 (text) - 2*10 (text:padding) - 2*10 (input,textarea: padding) - 5 (added margin) - 150 (button) - 4*1 (borders) = 431 */
+	width:	431px;
+}
+
+textarea {
+	/* Total width = 630 (text) - 2*10 (text: padding) - 2*10 (input,textarea: padding) - 2*1 (border) = 588 */
+	width:	588px;
+}
