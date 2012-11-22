@@ -1,3 +1,4 @@
+<?php include('include/include.inc'); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,6 +7,7 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		<link href="css/form.css" rel="stylesheet" type="text/css" />
 		<link href="css/contact.css" rel="stylesheet" type="text/css" />
+		<link href="css/auth.css" rel="stylesheet" type="text/css" />
 		<meta charset="utf-8" />
 	</head>
 	<body>
@@ -34,6 +36,7 @@
 				<h2>Subtitle two</h2>
 				<div class="text">
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</div>
 			</article>
 			<article>
 				<hgroup>
@@ -56,14 +59,28 @@
 						</li>
 					</ul>
 				</div>
-				<h2>Forms</h2>
+			</article>
+			<article>
+				<hgroup>
+					<h1>Forms</h1>
+					<h2>Contact form</h2>
+				</hgroup>
 				<div class="text">
 					Please fill out the form below if you wish to contact me.
-					<form action="#" method="POST">
+					<form action="contact" method="POST">
 						<input type="text" id="name" name="name" placeholder="Name (optional)" maxlength="20" />
 						<input type="submit" value="Send message" />
 						<input type="email" id="email" name="email" placeholder="E-mail" required /> (will be kept private)
 						<textarea id="text" name="text" placeholder="Write your message here" required></textarea><p>
+					</form>
+				</div>
+					<h2>Authentication form</h2>
+				<div class="text">
+					Secure credentials are required beyond this point. Please input your username and password to continue.
+					<form action="auth.php" method="post">
+						<input type="text" id="user" name="user" placeholder="Username" maxlength="20" required />
+						<input type="password" id="pass" name="pass" placeholder="Password" maxlength="20" required />
+						<input type="submit" class="button" value="Authenticate" />
 					</form>
 				</div>
 			</article>

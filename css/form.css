@@ -5,6 +5,9 @@
  *
  * IMPORTANT: when considering fixed widths for elements, bear in mind that all input elements (and textareas) have paddings and borders!
  *
+ * This file should be the second CSS file linked to (after style.css), before any other CSS sheets affecting input elements.
+ * These options set the general look and feel of input elements, without specifics such as width and height.
+ *
  **/
 
 form {

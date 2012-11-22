@@ -7,7 +7,8 @@
  *
  **/
 
-input:not([type='submit']) {
-	/* Total width: ??? */
+input[id="user"],
+input[id="pass"] {
+	/* Total width = ??? */
 	width:	204px;
 }

@@ -7,12 +7,14 @@
  *
  **/
 
-input, textarea {
+/* Use explicit IDs if you use multiple forms on one page */
+input[id="name"],
+input[id="email"] {
 	/* Total width = 630 (text) - 2*10 (text:padding) - 2*10 (input,textarea: padding) - 5 (added margin) - 150 (button) - 4*1 (borders) = 431 */
 	width:	431px;
 }
 
-textarea {
+textarea[id="text"] {
 	/* Total width = 630 (text) - 2*10 (text: padding) - 2*10 (input,textarea: padding) - 2*1 (border) = 588 */
 	width:	588px;
 }
