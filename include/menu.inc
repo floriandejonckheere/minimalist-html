@@ -1,7 +1,7 @@
 				<!-- menu items -->
-				<a href="/index.html" class="menuItem">Home</a>
-				<a href="#" class="menuItem">Menu item 1</a>
-				<a href="#" class="menuItem">Menu item 2</a>
+				<a href="/index.html">Home</a>
+				<a href="#">Menu item 1</a>
+				<a href="#">Menu item 2</a>
 				<!-- social media links -->
 				<span id="menuLinks">
 					<a href="#" title="Facebook"><img src="/icons/facebook.png" alt="Facebook" /></a>

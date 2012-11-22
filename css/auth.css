@@ -1,0 +1,13 @@
+/*
+ * auth.css - stylesheet for the login form, dependant on form.css
+ *
+ * Florian <floriandejonckheere.be>
+ *
+ * IMPORTANT: form.css MUST be linked first in the page (parent stylesheet)
+ *
+ **/
+
+input:not([type='submit']) {
+	/* Total width: ??? */
+	width:	204px;
+}
