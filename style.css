@@ -78,9 +78,20 @@ a {
 code,pre {
 	display:block;
 	font:13px "Inconsolata";
-	width:100%;
-	padding:7px;
+	width:584px;
+	max-width:584px;
+	padding:14px;
+	padding-right:0;
+	padding-bottom:0;
+	margin:15px 10px;
+	margin-right:0;
 	border:1px solid #bbb;
+	text-align:left;
+	overflow-x:scroll;
+	overflow-y:wrap;
+}
+.latex {
+	text-align:center;
 }
 img {
 	vertical-align:middle;
@@ -91,14 +102,33 @@ img {
 }
 
 .linkList {
-	list-style:none;
-	padding:0;
+	list-style-position:inside;
+	padding-left:15px;
 }
-.linkList li {
-	margin-bottom:7px;
+li {
+	margin-bottom:3px;
 }
 .linkList span {
 	margin-left:12px;
+}
+li {
+	margin-bottom:5px;
+}
+/* Types of linklist (use with <ul class="linklist link">)*/
+.link {
+	list-style-image:url('icons/link.png');
+}
+.download {
+	list-style-image:url('icons/download-alt.png');
+}
+.enum {
+	list-style-image:url('icons/chevron-right.png');
+}
+
+
+.timestamp {
+	float: right;
+	font-size: 12px;
 }
 
 h1 {
@@ -110,3 +140,9 @@ h2 {
 	font:23px "Open Sans";
 	font-weight:300;
 }
+h3 {
+	margin-top:15px;
+	font:18px "Open Sans";
+	font-weight:300;
+}
+

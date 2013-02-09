@@ -8,6 +8,7 @@
 		<link href="css/form.css" rel="stylesheet" type="text/css" />
 		<link href="css/contact.css" rel="stylesheet" type="text/css" />
 		<link href="css/auth.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
 		<meta charset="utf-8" />
 	</head>
 	<body>
@@ -45,19 +46,45 @@
 				</hgroup>
 				<div class="text">
 					This section contains a few examples of links. See below for more information.
-					<ul class="linkList">
+					<ul class="linkList link">
 						<li>
-							<a href="#"><img src="icons/link.png" alt="Link" class="icon" />External Link</a>
+							<a href="#">External Link</a>
 						</li>
-						<li>
-							<a href="#"><img src="icons/download-alt.png" alt="Download" class="icon" />Sample file</a>
+						<li class="download">
+							<a href="#">Sample file</a>
 							<br><span>Description for the sample file</span>
 						</li>
-						<li>
-							<a href="#"><img src="icons/download-alt.png" alt="Download" class="icon" />Sample file</a>
-							<br><span>Description for the sample file</span>
+						<li class="enum">
+							<a href="#">Sample enumeration</a>
+							<br><span>Description for the list item</span>
 						</li>
 					</ul>
+				</div>
+				<h2>Code</h2>
+				<div class="text">
+					<h3>LaTeX</h3>
+					This is an example of LaTeX code parsed by an external parser (CodeCogs). It shows an ineffici&euml;nt formula for calculating Pi (Leibniz' formula).
+					<code lang="latex" class="latex">
+						\sum^{\infty}_{n=0} \; \frac{(-1)^n}{2n+1} \; = \; \frac{\pi}{4}
+					</code>
+					<h3>Code fragments</h3>
+					The code fragment below is taken from the Linux kernel source code's <i>kernel/bounds.c</i> file. Work is to be done in this section.
+					<pre>
+void put_online_cpus(void)
+{
+	if (cpu_hotplug.active_writer == current)
+		return;
+	mutex_lock(&cpu_hotplug.lock);
+
+	if (WARN_ON(!cpu_hotplug.refcount))
+		cpu_hotplug.refcount++; /* try to fix things up */
+
+	if (!--cpu_hotplug.refcount && unlikely(cpu_hotplug.active_writer))
+		wake_up_process(cpu_hotplug.active_writer);
+	mutex_unlock(&cpu_hotplug.lock);
+
+}
+					</pre>
 				</div>
 			</article>
 			<article>
