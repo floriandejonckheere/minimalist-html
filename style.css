@@ -24,7 +24,7 @@ nav {
 }
 section {
 	margin-top:35px;
-	padding:inherit 35px;
+	padding:0 35px;
 	text-align:justify;
 }
 article {
@@ -78,17 +78,15 @@ a {
 code,pre {
 	display:block;
 	font:13px "Inconsolata";
-	width:584px;
-	max-width:584px;
+	/* 610px (text element) - 2 * 10 (margins) - 2 * 14 (paddings) - 2 * 1 (borders) = 560 */
+	width:560px;
 	padding:14px;
-	padding-right:0;
-	padding-bottom:0;
 	margin:15px 10px;
-	margin-right:0;
 	border:1px solid #bbb;
 	text-align:left;
-	overflow-x:scroll;
-	overflow-y:wrap;
+	/* Overflowing content will be hidden, because when the scrollbar is hidden there's a padding where it should be, and we don't need that */
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 .latex {
 	text-align:center;
@@ -101,28 +99,28 @@ img {
 	margin-right:5px;
 }
 
-.linkList {
-	list-style-position:inside;
+ul {
 	padding-left:15px;
+	list-style:none;
 }
-li {
-	margin-bottom:3px;
-}
-.linkList span {
+ul span {
 	margin-left:12px;
 }
 li {
 	margin-bottom:5px;
 }
-/* Types of linklist (use with <ul class="linklist link">)*/
-.link {
-	list-style-image:url('icons/link.png');
+/* Standard li style: enumeration. Define other styles by using class="link" or class="download" on the ul element. */
+li:before {
+	font-family: 'FontAwesome';
+	font-size:16px;
+	content: "\f054"; /* icon-chevron-right */
+	margin:0 5px 0 -15px;
 }
-.download {
-	list-style-image:url('icons/download-alt.png');
+.link:before {
+	content: "\f0c1"; /* icon-link */
 }
-.enum {
-	list-style-image:url('icons/chevron-right.png');
+.download:before {
+	content: "\f019"; /* icon-download-alt */
 }
 
 

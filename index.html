@@ -1,22 +1,22 @@
-<?php include('include/include.inc'); ?>
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8" />
 		<title>Florian Dejonckheere</title>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:300" rel="stylesheet" type="text/css">
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		<link href="css/form.css" rel="stylesheet" type="text/css" />
 		<link href="css/contact.css" rel="stylesheet" type="text/css" />
 		<link href="css/auth.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
-		<meta charset="utf-8" />
 	</head>
 	<body>
 		<header>
 			<div id="title" onClick="window.location = '/index.html';">Florian Dejonckheere</div>
 			<div id="loginBar">
 				<span id="login">
-					Logged in as <a href="#" onClick="if(confirm('You will be logged out.')){window.location = '/logout.php';}">dummy user</a>
+					Logged in as <a href="#" onClick="if(confirm('You will be logged out.')){window.location = 'logout.php';}">dummy user</a>
 				</span>
 			</div>
 			<nav>
@@ -46,17 +46,20 @@
 				</hgroup>
 				<div class="text">
 					This section contains a few examples of links. See below for more information.
-					<ul class="linkList link">
+					<ul>
 						<li>
-							<a href="#">External Link</a>
+							Sample enumeration
+						</li>
+						<li>
+							Sample enumeration #2
 						</li>
 						<li class="download">
 							<a href="#">Sample file</a>
 							<br><span>Description for the sample file</span>
 						</li>
-						<li class="enum">
-							<a href="#">Sample enumeration</a>
-							<br><span>Description for the list item</span>
+						<li class="link">
+							<a href="#">Sample link</a>
+							<br><span>Description for the link</span>
 						</li>
 					</ul>
 				</div>
@@ -69,7 +72,7 @@
 					</code>
 					<h3>Code fragments</h3>
 					The code fragment below is taken from the Linux kernel source code's <i>kernel/bounds.c</i> file. Work is to be done in this section.
-					<pre>
+<pre>
 void put_online_cpus(void)
 {
 	if (cpu_hotplug.active_writer == current)
@@ -84,7 +87,7 @@ void put_online_cpus(void)
 	mutex_unlock(&cpu_hotplug.lock);
 
 }
-					</pre>
+</pre>
 				</div>
 			</article>
 			<article>
