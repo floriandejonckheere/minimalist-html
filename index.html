@@ -67,24 +67,36 @@
 				<div class="text">
 					<h3>LaTeX</h3>
 					This is an example of LaTeX code parsed by an external parser (CodeCogs). It shows an ineffici&euml;nt formula for calculating Pi (Leibniz' formula).
+					<div class="codeTitle">
+						Leibniz' formula
+						<span class="codeLinks">
+							<a href="#">RAW</a>
+						</span>
+					</div>
 					<code lang="latex" class="latex">
 						\sum^{\infty}_{n=0} \; \frac{(-1)^n}{2n+1} \; = \; \frac{\pi}{4}
 					</code>
 					<h3>Code fragments</h3>
-					The code fragment below is taken from the Linux kernel source code's <i>kernel/bounds.c</i> file. Work is to be done in this section.
+					The code fragment below is taken from the Linux kernel source code (bounds.c).
+					<div class="codeTitle">
+						kernel/bounds.c
+						<span class="codeLinks">
+							<a href="#">RAW</a>
+						</span>
+					</div>
 <pre>
 void put_online_cpus(void)
 {
 	if (cpu_hotplug.active_writer == current)
 		return;
-	mutex_lock(&cpu_hotplug.lock);
+	mutex_lock(&amp;cpu_hotplug.lock);
 
 	if (WARN_ON(!cpu_hotplug.refcount))
 		cpu_hotplug.refcount++; /* try to fix things up */
 
-	if (!--cpu_hotplug.refcount && unlikely(cpu_hotplug.active_writer))
+	if (!--cpu_hotplug.refcount &amp;&amp; unlikely(cpu_hotplug.active_writer))
 		wake_up_process(cpu_hotplug.active_writer);
-	mutex_unlock(&cpu_hotplug.lock);
+	mutex_unlock(&amp;cpu_hotplug.lock);
 
 }
 </pre>
@@ -116,7 +128,7 @@ void put_online_cpus(void)
 			</article>
 		</section>
 		<footer>
-			Design by Florian Dejonckheere
+			Design by <a href="http://floriandejonckheere.be">Florian Dejonckheere</a>
 		</footer>
 	</body>
 </html>

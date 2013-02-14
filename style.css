@@ -75,18 +75,41 @@ a {
 	color:black;
 	text-decoration:underline;
 }
+.codeTitle {
+	font-size:13px;
+	font-style:italic;
+	/* 560px (code/pre el) + 2 * 14 (no paddings) - 2 * 5 (paddings) = 578 */
+	width:578px;
+	margin:15px 10px;
+	margin-bottom:0;
+	padding:3px 5px;
+	border:1px solid #bbb;
+	border-bottom:0;
+	background-color:light-grey;
+}
+.codeLinks {
+	float:right;
+	font-size:10px;
+	font-style:normal;
+}
 code,pre {
 	display:block;
-	font:13px "Inconsolata";
+	font-size:13px;
 	/* 610px (text element) - 2 * 10 (margins) - 2 * 14 (paddings) - 2 * 1 (borders) = 560 */
 	width:560px;
 	padding:14px;
 	margin:15px 10px;
+	margin-top:0;
 	border:1px solid #bbb;
 	text-align:left;
-	/* Overflowing content will be hidden, because when the scrollbar is hidden there's a padding where it should be, and we don't need that */
+	/* Overflowing content will be hidden, because when the scrollbar is hidden there's a padding where it should be, and we don't need that.
+	 * Instead, when the user hovers over the code, the scrollbar will be shown (if applicable). <EXPERIMENTAL FEATURE>
+	 *  */
 	overflow-x:hidden;
 	overflow-y:auto;
+}
+code:hover, pre:hover {
+	overflow-x:auto;
 }
 .latex {
 	text-align:center;

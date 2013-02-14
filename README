@@ -3,7 +3,9 @@ Minimalist-HTML
 
 This is the source code to my website http://www.floriandejonckheere.be. It is a purely black and white minimalist HTML 'framework' featuring a dead simple menu bar with social media links and single column layout. The navigation bar is loaded via PHP from an external file, in order to unify and simplify the website's structure.
 
-The project is licensed under the GNU Public License v3 (see COPYING). Icons are taken from the Font Awesome project by Dave Gandy (http://fortawesome.github.com/), and are licensed as following:
+The project is licensed under the GNU Public License v3 (see COPYING), which basically means you can use and modify this project, but only if you provide the modified source code under the same or similar license. Attribution is not required but appreciated.
+
+Icons are taken from the Font Awesome project by Dave Gandy (http://fortawesome.github.com/), and are licensed as following:
 - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
 - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License - http://opensource.org/licenses/mit-license.html
 - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
